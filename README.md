@@ -37,4 +37,4 @@ Django makes it easier to build better Web apps more quickly and with less code.
 
 ## License
 
-This project is covered under the MIT License.
+This project is covered under the Attribution-NonCommercial-NoDerivs 3.0 Unported License.
