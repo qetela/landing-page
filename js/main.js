@@ -86,11 +86,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* Form submission */
 
-  const form = document.querySelector('#sign-up form');
-  form.addEventListener('submit', function(event) {
+  const signUpForm = document.querySelector('#sign-up form');
+  signUpForm.addEventListener('submit', function(event) {
     event.preventDefault();
     const email = event.target.email.value;
-    console.log(email);
     const url = "https://docs.google.com/forms/d/e/1FAIpQLScahJXQs_QO8n6c7EhGndY9skZvgl23r-QbwIqGs61wdYlcsw/formResponse?entry.109977745="+email+"&submit=Submit";
     const options = {
       method: 'GET',
@@ -109,6 +108,38 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
   });
+
+
+    const contactForm = document.querySelector('#contact form');
+    contactForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const name = event.target.name.value;
+      const email = event.target.email.value;
+      const message = event.target.message.value;
+      let url = "https://docs.google.com/forms/d/e/1FAIpQLSenKqGfzAAzGzWTYuhk34XdxhUVmBDmABmQusA0rzwpB6_XTA/formResponse?";
+      url += "entry.484486239="+name;
+      url += "&entry.1465602530="+email;
+      url += "&entry.400053469="+message;
+      url += "&submit=Submit";
+      const options = {
+        method: 'GET',
+        mode: 'no-cors'
+      };
+
+      fetch(url,options)
+      .then(function(response) {
+        //Clear input
+        event.target.email.value = "";
+        event.target.name.value = "";
+        event.target.message.value = "";
+        successModal.classList.add('is-active');
+      })
+      .catch(function(error) {
+        console.log(error);
+        failureModal.classList.add('is-active');
+      });
+
+    });
 
 
 });
