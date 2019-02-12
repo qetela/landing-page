@@ -1,0 +1,50 @@
+$baby-powder-white: #fdfffc;
+$gunmetal: #30343f;
+$light-blue: #38aecc;
+$dark-blue: #011638;
+$candy-red: #ff1200;
+$light-grey:#EFF3F4;
+
+html,body {
+  background: $baby-powder-white;
+  color: $gunmetal;
+  scroll-behavior: smooth;
+}
+
+.navbar{
+  font-size: 14px;
+  background-color: $baby-powder-white;
+  a{
+    color: $candy-red;
+  }
+
+  .navbar-item{
+    img {
+    	max-height: 3rem;
+    }
+  }
+
+}
+
+h1,h2{
+  color: $candy-red !important;
+  padding: 2rem;
+}
+
+.title{
+  color: $dark-blue;
+}
+
+.content{
+
+  .title{
+    color: $dark-blue;
+  }
+}
+
+
+footer{
+  background-color: $gunmetal;
+  color: $baby-powder-white;
+
+}
