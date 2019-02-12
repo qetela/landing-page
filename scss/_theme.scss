@@ -48,3 +48,19 @@ footer{
   color: $baby-powder-white;
 
 }
+
+
+.modal-content{
+  padding: 2rem;
+  background-color: $baby-powder-white;
+
+  i{
+    color:$gunmetal; 
+    margin-top: 1rem;
+    font-size: 5rem;
+  }
+
+  h1{
+    padding: 0;
+  }
+}

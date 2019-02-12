@@ -33,6 +33,19 @@ footer {
   color: #fdfffc;
 }
 
+.modal-content {
+  padding: 2rem;
+  background-color: #fdfffc;
+}
+.modal-content i {
+  color: #30343f;
+  margin-top: 1rem;
+  font-size: 5rem;
+}
+.modal-content h1 {
+  padding: 0;
+}
+
 #hero {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/hero.jpeg") no-repeat center center fixed;
   -webkit-background-size: cover;

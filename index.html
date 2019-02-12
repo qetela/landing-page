@@ -177,10 +177,10 @@
     <h2 class="subtitle">
       Get informed as soon as we launch!
     </h2>
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLScahJXQs_QO8n6c7EhGndY9skZvgl23r-QbwIqGs61wdYlcsw/formResponse" method="POST" target="_blank">
+    <form action="/" method="POST" target="_blank">
       <div class="field has-addons has-text-centered  is-hidden-mobile">
         <div class="control">
-          <input class="input is-rounded is-medium" type="email" placeholder="Enter your email" name="entry.109977745">
+          <input class="input is-rounded is-medium" type="email" placeholder="Enter your email" name="email">
         </div>
         <div class="control">
           <input type="Submit" name="submit" value="Submit" class="button is-rounded is-medium"/>
@@ -207,6 +207,40 @@
       </div>
     </div>
   </footer>
-  <script src="./js/main.js"></script>
-</body>
-</html>
+
+  <!-- Modals-->
+  <div class="signup-confirm-modal modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="columns">
+        <div class="column has-text-centered">
+          <i class="fas fa-thumbs-up"></i>
+        </div>
+        <div class="column  is-two-thirds">
+          <h1 class="title is-3">Sign up successful</h1>
+          <p>We have successfully recieved your email address.</p>
+          <p>Thank you</p>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+  </div>
+
+    <div class="signup-failed-modal modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="columns">
+          <div class="column has-text-centered">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <div class="column  is-two-thirds">
+            <h1 class="title is-3">Sign up failed</h1>
+            <p>We are unable to recieve your email address.</p>
+            <p>Please try again</p>
+          </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+    <script src="./js/main.js"></script>
+  </body>
+  </html>
