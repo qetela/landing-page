@@ -43,24 +43,28 @@ h1,h2{
 }
 
 
-footer{
-  background-color: $gunmetal;
-  color: $baby-powder-white;
-
-}
-
 
 .modal-content{
   padding: 2rem;
   background-color: $baby-powder-white;
 
   i{
-    color:$gunmetal; 
+    color:$gunmetal;
     margin-top: 1rem;
     font-size: 5rem;
   }
 
   h1{
     padding: 0;
+  }
+}
+
+.survey{
+  div{
+    padding: 0.5rem;
+
+    a{
+      margin: 0.5rem 0;
+    }
   }
 }

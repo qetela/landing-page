@@ -28,11 +28,6 @@ h1, h2 {
   color: #011638;
 }
 
-footer {
-  background-color: #30343f;
-  color: #fdfffc;
-}
-
 .modal-content {
   padding: 2rem;
   background-color: #fdfffc;
@@ -44,6 +39,13 @@ footer {
 }
 .modal-content h1 {
   padding: 0;
+}
+
+.survey div {
+  padding: 0.5rem;
+}
+.survey div a {
+  margin: 0.5rem 0;
 }
 
 #hero {
@@ -81,7 +83,7 @@ footer {
   padding: 2rem;
 }
 
-#philosophy {
+#articles {
   background: #EFF3F4;
   margin-top: 2rem 0 0;
   padding: 2rem;
@@ -127,6 +129,54 @@ footer {
   opacity: 0.7;
 }
 #sign-up .field ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fdfffc;
+  opacity: 0.7;
+}
+
+#contact {
+  background-color: #30343f;
+  color: #fdfffc;
+  padding: 2rem;
+}
+#contact h1, #contact h2, #contact h3 {
+  color: #fdfffc !important;
+  padding: 1rem 0 0;
+}
+#contact iframe {
+  min-height: 200px;
+}
+#contact hr {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 90%;
+  margin: 2rem auto;
+}
+#contact .input, #contact .textarea {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fdfffc;
+  margin-bottom: 1rem;
+}
+#contact .input.is-active, #contact .input.is-focused, #contact .input:active, #contact .input:focus, #contact .textarea.is-active, #contact .textarea.is-focused, #contact .textarea:active, #contact .textarea:focus {
+  border-color: #ff1200;
+  box-shadow: 0 0 0 0.125em rgba(255, 18, 0, 0.25);
+}
+#contact .button {
+  background-color: #ff1200;
+  color: #fdfffc;
+  border-color: #ff1200;
+}
+#contact .input::placeholder, #contact .textarea::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fdfffc;
+  opacity: 0.7;
+  /* Firefox */
+}
+#contact .input:-ms-input-placeholder, #contact .textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fdfffc;
+  opacity: 0.7;
+}
+#contact .input::-ms-input-placeholder, #contact .textarea::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #fdfffc;
   opacity: 0.7;

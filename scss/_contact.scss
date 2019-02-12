@@ -1,0 +1,53 @@
+#contact{
+  background-color: $gunmetal;
+  color: $baby-powder-white;
+  padding: 2rem;
+
+  h1,h2,h3{
+    color: $baby-powder-white !important;
+    padding: 1rem 0 0;
+  }
+
+  iframe{
+    min-height: 200px;
+  }
+
+  hr{
+    background-color: rgba(255,255,255,0.2);
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  .input,.textarea{
+    background-color: rgba(0,0,0,0);
+    color:$baby-powder-white;
+    margin-bottom: 1rem
+  }
+
+  .input.is-active, .input.is-focused, .input:active, .input:focus, .textarea.is-active, .textarea.is-focused, .textarea:active, .textarea:focus {
+    border-color: $candy-red;
+    box-shadow: 0 0 0 .125em rgba(255,18,0,.25);
+  }
+
+  .button{
+    background-color: $candy-red;
+    color:$baby-powder-white;
+    border-color: $candy-red;
+  }
+
+  .input::placeholder,.textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $baby-powder-white;
+    opacity: 0.7; /* Firefox */
+  }
+
+  .input:-ms-input-placeholder,.textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $baby-powder-white;
+    opacity: 0.7;
+  }
+
+  .input::-ms-input-placeholder,.textarea::-ms-input-placeholder  { /* Microsoft Edge */
+    color: $baby-powder-white;
+    opacity: 0.7;
+  }
+
+}
