@@ -42,6 +42,9 @@ h1, h2 {
   padding: 0;
 }
 
+.survey {
+  margin-bottom: 0;
+}
 .survey div {
   padding: 0.5rem;
 }
@@ -62,48 +65,45 @@ footer hr {
   margin: 1rem auto;
 }
 
-#hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.jpeg") no-repeat center center fixed;
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.jpeg") no-repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 2rem 0;
+  padding: 2rem 0 0;
 }
-#hero .hero-body .container {
+.hero .hero-body .container {
   max-width: 700px;
 }
-#hero .hero-body .container .title {
+.hero .hero-body .container .title {
   color: #fcfdfd !important;
 }
-#hero .hero-body .container .subtitle {
+.hero .hero-body .container .subtitle {
   color: #fcfdfd !important;
   line-height: 1.5;
 }
-#hero .hero-body .container .buttons {
+.hero .hero-body .container .buttons {
   padding-top: 2rem;
   width: 240px;
   margin: 0 auto;
 }
-#hero .hero-body .container .buttons .button {
+.hero .hero-body .container .buttons .button {
   width: 120px;
 }
 
-#what-we-do .column {
-  padding: 1rem 2rem;
+.what-we-do {
+  padding: 2rem 0 0;
 }
-#what-we-do .column img {
+.what-we-do .column {
+  padding: 0 2rem;
+}
+.what-we-do .column img {
   height: 10rem;
   padding: 2rem;
 }
 
-#articles {
-  background: #EFF3F4;
-  margin-top: 2rem 0 0;
-  padding: 2rem;
-}
-
-#sign-up {
+.sign-up {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/signup-bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -111,86 +111,85 @@ footer hr {
   background-size: cover;
   padding: 4rem 0;
 }
-#sign-up h1, #sign-up h2 {
+.sign-up h1, .sign-up h2 {
   color: #fdfffc !important;
 }
-#sign-up .field {
+.sign-up .field {
   justify-content: center;
 }
-#sign-up .field .input[type=email] {
+.sign-up .field .input[type=email] {
   background-color: rgba(0, 0, 0, 0);
   color: #fdfffc;
   margin-bottom: 1rem;
 }
-#sign-up .field .input.is-active, #sign-up .field .input.is-focused, #sign-up .field .input:active, #sign-up .field .input:focus, #sign-up .field .textarea.is-active, #sign-up .field .textarea.is-focused, #sign-up .field .textarea:active, #sign-up .field .textarea:focus {
+.sign-up .field .input.is-active, .sign-up .field .input.is-focused, .sign-up .field .input:active, .sign-up .field .input:focus, .sign-up .field .textarea.is-active, .sign-up .field .textarea.is-focused, .sign-up .field .textarea:active, .sign-up .field .textarea:focus {
   border-color: #ff1200;
   box-shadow: 0 0 0 0.125em rgba(255, 18, 0, 0.25);
 }
-#sign-up .field input[type=submit] {
+.sign-up .field input[type=submit] {
   background-color: #ff1200;
   color: #fdfffc;
   border-color: #ff1200;
 }
-#sign-up .field ::placeholder {
+.sign-up .field ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #fdfffc;
   opacity: 0.7;
   /* Firefox */
 }
-#sign-up .field :-ms-input-placeholder {
+.sign-up .field :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #fdfffc;
   opacity: 0.7;
 }
-#sign-up .field ::-ms-input-placeholder {
+.sign-up .field ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #fdfffc;
   opacity: 0.7;
 }
 
-#contact {
+.contact {
   background-color: #30343f;
   color: #fdfffc;
   padding: 2rem;
 }
-#contact h1, #contact h2, #contact h3 {
+.contact h1, .contact h2, .contact h3 {
   color: #fdfffc !important;
-  padding: 1rem 0 0;
 }
-#contact iframe {
+.contact iframe {
   min-height: 200px;
 }
-#contact hr {
+.contact hr {
   background-color: rgba(255, 255, 255, 0.2);
   width: 90%;
   margin: 2rem auto;
 }
-#contact .input, #contact .textarea {
+.contact .input, .contact .textarea {
   background-color: rgba(0, 0, 0, 0);
   color: #fdfffc;
   margin-bottom: 1rem;
 }
-#contact .input.is-active, #contact .input.is-focused, #contact .input:active, #contact .input:focus, #contact .textarea.is-active, #contact .textarea.is-focused, #contact .textarea:active, #contact .textarea:focus {
+.contact .input.is-active, .contact .input.is-focused, .contact .input:active, .contact .input:focus, .contact .textarea.is-active, .contact .textarea.is-focused, .contact .textarea:active, .contact .textarea:focus {
   border-color: #ff1200;
   box-shadow: 0 0 0 0.125em rgba(255, 18, 0, 0.25);
 }
-#contact .button {
+.contact .button {
   background-color: #ff1200;
   color: #fdfffc;
   border-color: #ff1200;
 }
-#contact .input::placeholder, #contact .textarea::placeholder {
+.contact .input::placeholder, .contact .textarea::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #fdfffc;
   opacity: 0.7;
   /* Firefox */
 }
-#contact .input:-ms-input-placeholder, #contact .textarea:-ms-input-placeholder {
+.contact .input:-ms-input-placeholder, .contact .textarea:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #fdfffc;
   opacity: 0.7;
 }
-#contact .input::-ms-input-placeholder, #contact .textarea::-ms-input-placeholder {
+.contact .input::-ms-input-placeholder, .contact .textarea::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #fdfffc;
   opacity: 0.7;
